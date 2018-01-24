@@ -1,0 +1,174 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Rust, Servo and <br> Firefox Quantum</h2>
+					<p>The history through a personal tale </p>
+					<img data-src="img/quantum-engine.png" width="400">
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h3>I'm Stefania Delprete</h3> 
+					<p>astrastefania on LinkedIn, Twitter, GitHub...</p>
+				</section>
+				<section data-background-color="#80c1ff">
+					<h2>Once upon a time... </h2>
+				</section>
+				<section>
+					<h2>July 2010</h2>
+				    <p>Rust, a personal project by Graydon Hoare, became officially sposored by Mozilla Research and launched at the Mozilla Summit 2010.</p>
+				</section>
+				<section data-background-color="#80c1ff">
+					<h2>Fast forward, few years later... </h2>
+				</section>
+				<section>
+					<h2>May 2015</h2>
+				    <p><a href="https://github.com/rust-lang/rust">Rust</a> programming language reached its 1.0 stability milestone!</p>
+				</section>
+				<section>
+					<h2>Why?</h2>
+					<p class="fragment fade-in">safety</p>
+					<p class="fragment fade-in">speed</p>
+					<p class="fragment fade-in">concurrency</p>					
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h2>July 2015</h2>
+					<p>In the meantime I landed in Berlin where I attended my first Mozilla event and ended up working on a bug with David Bryant.</p>
+				</section>
+				<section data-background-color="#e6f3ff">
+					<img data-src="img/moz1.jpg" height="350">
+					<img data-src="img/moz2.png" width="450">
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h2>September 2015</h2>
+					<p>Three friends in a pub ready to change the world...</p>
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h2>November 2015</h2>
+					<p>First Mozilla Berlin Tech Weekend where I really discover Servo, and Rust, with Till Schneidereit talk <a href = "https://air.mozilla.org/berlin-mozilla-tech-weekend-2015-servo-mozillas-parallel-safe-next-generation-browser-engine-till-schneidereit/">"Mozilla's Parallel and Safe Next-Generation Browser Engine".</a></p>
+				</section>
+				<section data-background-color="#e6f3ff">
+					<p>"Rust makes parallelization <u>feasible</u>"</p>
+					<img data-src="img/till-servo.png" width="600">
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h2>February 2016</h2>
+					<p>And than it was time to play with Rust and Servo!
+					<img data-src="img/servo.png" width="600">
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h2>May 2016</h2>
+					<p>Servo and Rust communities kept expanding, there were projects to test <a href="https://github.com/browserhtml/browserhtml">Servo in HTML</a> and frequent Rust MeetUp events and study groups</p>
+				</section>
+				<section>
+					<h2>August 2016</h2>
+					<p>Rust is used for the first time in Firefox 48 to fix
+				    an MP4 metadata parser.</p> 
+				    <p>The <a href="https://wiki.mozilla.org/Oxidation">Oxidation Project</a>, integrating Rust code in and around Firefox, became real!</p>
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h2>September 2016</h2>
+					<p>After the View Source I went back in Italy and started exploring the local open source scene.</p>
+					<img data-src="img/viewsource.jpg" height="350">
+				</section>
+				<section>
+					<h2>October 2016</h2>
+					<p>David Bryant <a href="https://medium.com/mozilla-tech/a-quantum-leap-for-the-web-a3b7174b3c12">announced the Quantum Project</a>:</p>
+					<p>"Quantum is our effort to develop Mozilla's next-generation web engine and start delivering major improvements to users by the end of 2017. [...] Quantum has a number of components, including several adopted from the Servo project."</p>
+				</section>
+				<section>
+					<h2>The quantum project...</h2>
+					<img src="img/quantum-engine.png" width="600">
+				</section>
+				<section>
+					<h2>... and its timeline</h2>
+					<img src="img/quantum-timeline.png" width="600">
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h2>January 2017</h2>
+					I'm back in Berlin for ten intense days, talking about Quantum, data science and <a href="https://hacks.mozilla.org/2017/11/comparing-browser-page-load-time-an-introduction-to-methodology/">comparing browser page load time</a>.</p>
+				</section>
+				<section>
+					<h2>April 2017</h2>
+					<p>First part of the Quantum Project in <a href="https://hacks.mozilla.org/2017/04/firefox-53-quantum-compositor-compact-themes-css-masks-and-more/">Firefox 53</a>: the Quantum Compositor!</p>
+				</section>
+				<section>
+					<h2>Quantum Compositor</h2>
+					<p>"Compositors are responsible for flattening all of the various elements on a webpage into a single image to be drawn on the screen."</p>
+					<p>" Quantum Compositor moved the compositor to its own process. The biggest win here was that it made Firefox more stable. Having a separate process means that if the graphics driver crashes, it <a href="https://ashughes.com/?p=426">won’t crash all of Firefox."</a></p>
+				</section>
+				<section>
+				    <h2>Quantum DOM</h2>
+    				<p>"The goal of the <a href="https://wiki.mozilla.org/Quantum/DOM">Quantum DOM</a> project is to eliminate jank caused by background tabs. One of the main ways we intend to do this is to run each tab in its own cooperatively scheduled thread."</p>
+				</section>
+				<section>
+					<h2>November 2017</h2>
+                    <p>The CSS engine <a href="https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo/">Quantum CSS</a> (known as Stylo), first major component from Servo, landed on Firefox 57!</p>
+				    <img src="img/quantum-css.png" width="500" style="background:none; border:none; box-shadow:none;">
+				</section>
+				<section>
+				    <h2>Quantum CSS</h2>
+				    <p>"With Stylo, the work of CSS style computation is fully parallelized across all of the CPU cores. Stylo uses a technique called work stealing to efficiently split up the work between the cores so that they all stay busy."</p>
+				</section>
+				<section>
+					<h2>January 2018</h2>
+					<p class="fragment fade-in">Rust 1.23</p>
+					<p class="fragment fade-in">Firefox 57</p>
+					<p class="fragment fade-in">Firefox 59 (Developer Edition, Nightly)</p>
+					<img src="img/quantum-timeline2.png" width="400" class="fragment fade-in" style="background:none; border:none; box-shadow:none;">
+				</section>
+				<section>
+					<h2>And beyond...</h2>
+					<p>The WebRender, as part of the Quantum Render, is expected to land in late spring.</p>
+					<img src="img/quantum-render.png" width="400" style="background:none; border:none; box-shadow:none;">
+					<p>Check out the latest <a href="https://mozillagfx.wordpress.com/">WebRender newsletters</a></p>
+				</section>
+				<section>
+				    <h2>Credits and articles</h2>
+				    <div align="left" style="font-size:80%">
+				    <p>Drawings by <a href="https://code-cartoons.com/">Lin Clark</a></p>
+					<p><a href="https://medium.com/mozilla-tech/why-rust-is-the-most-loved-language-by-developers-666add782563">Why Rust is the Most Loved Language by Developers</a></p>
+					<p>Curiosities through 5-year old tickets: Rust in <a href=https://bugzilla.mozilla.org/show_bug.cgi?id=1135640>Gecko</a> and in <a href=https://trac.torproject.org/projects/tor/ticket/11331>Tor</a>?</p>
+					<p><a href="https://hacks.mozilla.org/2017/06/designing-for-performance-a-data-informed-approach-for-quantum-development">Designing for performance: A data-informed approach for Quantum development</a></p>
+					<p><a href="https://hacks.mozilla.org/2017/11/entering-the-quantum-era-how-firefox-got-fast-again-and-where-its-going-to-get-faster/">Entering the Quantum Era—How Firefox got fast again and where it’s going to get faster</a></p>
+					</div>
+				</section>
+				<section>
+				    <h2>Resources</h2>
+				    <div align="left" style="font-size:80%">
+				    <p><a href="https://www.rust-lang.org/">Rust</a> and <a href="https://servo.org/">Servo</a></p>
+				    <p>The <a href="https://wiki.mozilla.org/Quantum">Quantum Project</a> and how to get involved</p>
+				    <p><a href="https://hacks.mozilla.org/2017/05/quantum-up-close-what-is-a-browser-engine/">Quantum Up Close: What is a browser engine?</a></p>
+					<p><a href="https://wiki.mozilla.org/Platform/GFX/Quantum_Render">Quantum Render</a> and <a href="https://github.com/servo/webrender">WebRender in Servo</a></p>
+					<p><a href="https://www.mozilla.org/en-US/firefox/releases/">Firefox releases</a></p>
+					</div>
+				</section>
+				<section data-background-color="#80c1ff">
+					<h2>MERGE-IT</h2>
+					<p>Mozilla Italia track including Rust activities</p>
+					<p>Turin, 24 March 2018</p>
+					<p><a href="https://merge-it.net">merge-it.net</a></p>
+				</section>
+				<section data-background-color="#e6f3ff">
+					<h3>"E questo è Quantum!" ;)</h3> 
+					<p>contact@stefaniadelprete.com</p>
+					<p>or astrastefania on</p>
+					<p><img src="img/logo/linkedin.png" width="40" style="background:none; border:none; box-shadow:none;">
+					   <img src="img/logo/twitter.gif" width="40" style="background:none; border:none; box-shadow:none;">
+					   <img src="img/logo/github.ico" width="40" style="background:none; border:none; box-shadow:none;">
+					   <img src="img/logo/instagram.png" width="40" style="background:none; border:none; box-shadow:none;">
+					    </p>
+				</section>
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>
