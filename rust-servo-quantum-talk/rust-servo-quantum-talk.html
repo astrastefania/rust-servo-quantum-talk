@@ -116,15 +116,21 @@
 				    <p>"With Stylo, the work of CSS style computation is fully parallelized across all of the CPU cores. Stylo uses a technique called work stealing to efficiently split up the work between the cores so that they all stay busy."</p>
 				</section>
 				<section>
-					<h2>January 2018</h2>
-					<p class="fragment fade-in">Rust 1.23</p>
-					<p class="fragment fade-in">Firefox 57</p>
-					<p class="fragment fade-in">Firefox 59 (Developer Edition, Nightly)</p>
+					<h2>December 2017</h2>
+                    <p><a href="https://github.com/servo/servo/wiki/Austin-Oxidation">Oxidation Meeting</a> in Austin</p>
+				    <p class="fragment fade-in">Compile speed and memory usage</p>
+					<p class="fragment fade-in">Cross-language inlining </p>
+				</section>
+				<section>
+					<h2>February 2018</h2>
+					<p class="fragment fade-in">Rust 1.24.0</p>
+					<p class="fragment fade-in">Firefox 58</p>
+					<p class="fragment fade-in">Firefox 60 (Nightly)</p>
 					<img src="img/quantum-timeline2.png" width="400" class="fragment fade-in" style="background:none; border:none; box-shadow:none;">
 				</section>
 				<section>
-					<h2>And beyond...</h2>
-					<p>The WebRender, as part of the Quantum Render, is expected to land in late spring.</p>
+					<h2>Quantum Render</h2>
+					<p style="font-size:90%"">"The WebRender is Servo's next-generation render optimized for GPU rendering". It expected to land in late spring, it can now be enabled in the Firefox Nightly!</p>
 					<img src="img/quantum-render.png" width="400" style="background:none; border:none; box-shadow:none;">
 					<p>Check out the latest <a href="https://mozillagfx.wordpress.com/">WebRender newsletters</a></p>
 				</section>
@@ -134,6 +140,7 @@
 				    <p>Drawings by <a href="https://code-cartoons.com/">Lin Clark</a></p>
 					<p><a href="https://medium.com/mozilla-tech/why-rust-is-the-most-loved-language-by-developers-666add782563">Why Rust is the Most Loved Language by Developers</a></p>
 					<p>Curiosities through 5-year old tickets: Rust in <a href=https://bugzilla.mozilla.org/show_bug.cgi?id=1135640>Gecko</a> and in <a href=https://trac.torproject.org/projects/tor/ticket/11331>Tor</a>?</p>
+					And now will <a href="https://trac.torproject.org/projects/tor/wiki/RustInTor"> Tor be written in Rust</a>?
 					<p><a href="https://hacks.mozilla.org/2017/06/designing-for-performance-a-data-informed-approach-for-quantum-development">Designing for performance: A data-informed approach for Quantum development</a></p>
 					<p><a href="https://hacks.mozilla.org/2017/11/entering-the-quantum-era-how-firefox-got-fast-again-and-where-its-going-to-get-faster/">Entering the Quantum Era—How Firefox got fast again and where it’s going to get faster</a></p>
 					</div>
@@ -170,5 +177,12 @@
 		<script>
 			Reveal.initialize();
 		</script>
+		<script>
+	    var link = document.createElement('link');
+	    link.rel = 'stylesheet';
+	    link.type = 'text/css';
+	    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	    document.getElementsByTagName('head')[0].appendChild(link);
+        </script>
 	</body>
 </html>
