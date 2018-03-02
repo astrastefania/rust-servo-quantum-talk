@@ -13,5 +13,4 @@ A special thanks to the Mozilla community in Berlin for the support, resources a
 
 --------------
 
-Added slides in pdf.
-For all the links, please download html version in the rust-servo-quantum-talk subfolder. 
+Added slides in pdf. ;)
