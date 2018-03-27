@@ -1,7 +1,7 @@
 # "Rust, Servo and Firefox Quantum
 ### The history through a personal tale
 
-This talk was offered during a Rust Night in Turin.  
+This talk was offered during a Rust Night in Turin:  
 http://torinocodingsociety.it/events/torino-coding-society-23gen18
 
 For the slides I used [reveal.js](https://revealjs.com).
@@ -13,4 +13,14 @@ A special thanks to the Mozilla community in Berlin for the support, resources a
 
 --------------
 
-Added slides in pdf. ;)
+Added slides in pdf.
+
+--------------
+
+Slides updated for the Rust Language Milano MeetUp:
+https://www.meetup.com/rust-language-milano/events/247930375/
+
+--------------
+
+Slides updated for Merge-it:
+https://merge-it.net/index.html#section-ajenda
