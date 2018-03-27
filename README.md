@@ -17,10 +17,10 @@ Added slides in pdf.
 
 --------------
 
-Slides updated for the Rust Language Milano MeetUp:
+Slides updated for the Rust Language Milano MeetUp:  
 https://www.meetup.com/rust-language-milano/events/247930375/
 
 --------------
 
-Slides updated for Merge-it:
+Slides updated for Merge-it:  
 https://merge-it.net/index.html#section-ajenda
