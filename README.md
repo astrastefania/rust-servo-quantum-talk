@@ -1,4 +1,4 @@
-# "Rust, Servo and Firefox Quantum
+# "Rust, Servo and Firefox Quantum"
 ### The history through a personal tale
 
 This talk was offered during a Rust Night in Turin:  
